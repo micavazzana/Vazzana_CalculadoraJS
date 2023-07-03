@@ -55,8 +55,9 @@ do {
          if (hiceCalculo) //Si el calculo fue realizado 
          {
             alert(concatenarResultados(operando1, operando2, resultadoSuma,resultadoResta,resultadoDivision,resultadoMultiplicacion));
-            if(confirm("Quiere volver a operar?"))
+            if(confirm("Quiere volver a operar?")) 
             {
+               //En caso de seguir operando reseteo las variables que definen si los operandos existen y si el calculo fue hecho
                hiceCalculo = false;
                operando1 = null;
                operando2 = null;
